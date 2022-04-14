@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Gaussian Curve and Probability</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  </head>
+  <body>
+
+    <div class="container">
+      <canvas id="canvas" width="900" height="600"></canvas>
+      <br>
+      <input type="radio" id="gaus" name="skew" value="gs" checked>
+      <label for="gs">Normal Distribution</label>
+      <input type="radio" id="leftSkew" name="skew" value="ls">
+      <label for="ls">Left Skewed</label>
+      <input type="radio" id="rightSkew" name="skew" value="rs">
+      <label for="rs">Right Skewed</label>
+
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <button class="btn btn-dark" type="button" id="dp">Refresh</button>
+        </div>
+        <input type="text" class="form-control" placeholder="Amount of Data Points (Default is 100)" aria-describedby="basic-addon1" id="counter">
+      </div>
+      <p>The Gaussian Curve, also known as the Normal Distribution or Bell Curve, is how data should cluster around a true average. Each pink dot is a data point that could represent anything. Let’s use the example of average height for women in the United States. The center of the curve would be 5’4”. Each position to the left or right of that average is, let’s say 3”. So as we generate more and more data points, we can see that the true average is somewhere between 5’1” and 5’7”. These data could represent anything so long as it is an accumulation of independent events. For our height example, height would be an accumulation of diet, genes, etc.</p>
+      <p>We can also choose left or right skew. This means that the data will cluster differently. For instance, if we were to graph test scores, we would assume it to be left skewed because it is unlikely that the true average of a test would be 50%. The true average would be 75%, hence the data is clustered around the right of the graph.</p>
+      <p>The important thing to understand, is that as our data points approach infinity, the true average comes out. This is why large sample sizes are important. If you use the tool to generate 1, 5, or even 10 data points, the average may not be clear. This is why anecdotal evidence is not to be trusted. Small samples don’t tell the whole story.</p>
+      <p>Note: Exact values of how many dots are in each column are included in the console. (ctrl + shift + j)</p>
+      <p>All code authored by Ian S. Check out my website <a href="http://ian-m-sugg.com">here!</a></p>
+    </div>
+
+  </body>
+  <script src="https://unpkg.com/mathjs/dist/math.min.js"></script>
+  <script src="./script.js"></script>
+</html>

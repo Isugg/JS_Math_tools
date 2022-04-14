@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Sin and Cos Visualizer</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  </head>
+  <body>
+
+    <div class="container">
+      <canvas id="canvas" width="900" height="600"></canvas>
+      <br>
+      <button type="button" class="btn btn-dark" id="crclBtn">Toggle Circle</button>
+      <button type="button" class="btn btn-dark" id="xBtn">Toggle X</button>
+      <button type="button" class="btn btn-dark" id="yBtn">Toggle Y</button>
+      <button type="button" class="btn btn-dark" id="trailBtn">Toggle Trails</button>
+      <button type="button" class="btn btn-dark" id="sync">Sync</button>
+      <p>This is a visualization of the sine and cosine graphs as measured from the x and y coordinates of a circle. Here the blue dot is a circular orbit. Next we can break it down into the x and y coordinates of each position of the blue dot. These are the yellow dots. If we expand the yellow dots, we get the sine and cosine functions! It was inspired by Numberphile's video <a href="https://www.youtube.com/watch?v=snHKEpCv0Hk">here.</a> All code authored by Ian S.</p>
+      <a href="http://ian-m-sugg.com">Check out my website!</a>
+    </div>
+  </body>
+
+  <script src="https://unpkg.com/mathjs/dist/math.min.js"></script>
+  <script src="./scriptWorking.js"></script>
+</html>
